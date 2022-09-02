@@ -1,0 +1,59 @@
+//   ============================================================ order ============================================================
+  
+aside {
+    flex: 2;
+    padding: 0.4rem;
+  }
+
+
+
+
+  .order {
+    border: 0.05rem solid var(--gray);
+    border-radius: 6px;
+    display: flex;
+    display: -ms-flexbox;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: #fff;
+  }
+  
+  .order .total {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+  }
+  
+  .order .order-nav {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  
+  .order .body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 0.6rem 0.8rem;
+    padding-bottom: 0;
+  }
+
+  //   ============================================================ empty ============================================================
+  
+  .empty {
+    background-color: #fff;
+    border: 0.05rem solid #fff;
+    color: var(--primary-alpha);
+    border-radius: 6px;
+    padding: 3.2rem 1.6rem;
+    text-align: center;
+  }
+  
+  .empty .title,
+  .empty .subtitle {
+    margin: 0.8rem auto;
+  }
+  
+  .empty .subtitle {
+    font-size: 0.9rem;
+  }
+

@@ -1,0 +1,44 @@
+/* font 파일을 직접다운받은다음 적용할때의 css*/
+
+/* L를 위한 선언 */
+@font-face {
+  /* css에서 선언할 이름 지정 */
+  font-family: "kimgbug";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./assets/fonts/NanumSquareRoundL.eot");
+  /*브라우저마다 지원되는 fomat 에 대응하기위한 여러개의 url*/
+  src: url("./assets/fonts/NanumSquareRoundL.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/NanumSquareRoundL.woff2") format("woff2"),
+    url("./assets/fonts/NanumSquareRoundL.woff") format("woff"),
+    url("./assets/fonts/NanumSquareRoundL.ttf") format("truetype");
+}
+
+/* B를 위한 선언 */
+@font-face {
+  font-family: "kimgbug";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/NanumSquareRoundB.eot");
+  /*브라우저마다 지원되는 fomat 에 대응하기위한 여러개의 url*/
+  src: url("./assets/fonts/NanumSquareRoundB.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/NanumSquareRoundB.woff2") format("woff2"),
+    url("./assets/fonts/NanumSquareRoundB.woff") format("woff"),
+    url("./assets/fonts/NanumSquareRoundB.ttf") format("truetype");
+}
+
+/* EB를 위한 선언 */
+@font-face {
+  font-family: "kimgbug";
+  font-style: normal;
+  font-weight: 800;
+  src: url("./assets/fonts/NanumSquareRoundEB.eot");
+  /*브라우저마다 지원되는 fomat 에 대응하기위한 여러개의 url*/
+  src: url("./assets/fonts/NanumSquareRoundEB.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/NanumSquareRoundEB.woff2") format("woff2"),
+    url("./assets/fonts/NanumSquareRoundEB.woff") format("woff"),
+    url("./assets/fonts/NanumSquareRoundEB.ttf") format("truetype");
+}

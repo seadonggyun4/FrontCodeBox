@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  height: 100vh;
+  width: 100%;
+}
+
+button,
+input,
+textarea {
+  font-family: "Lato", sans-serif;
+}
+
+button {
+  border: none;
+  background-color: #fff;
+}
+
+.line-button {
+  position: relative;
+  padding: 18px 30px;
+  width: 500px;
+  font-size: 100px;
+  font-weight: 400px;
+  line-height: 1.25;
+  color: #151b26;
+  cursor: pointer;
+  transition: font-size 250ms ease-in;
+}
+
+.line-button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 7px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #0066ff;
+  transition: width 2500ms ease-in, background-color 2500ms ease-in,
+    background-image 2500ms ease-in;
+}
+
+.line-button:hover::after {
+  width: 100%;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}

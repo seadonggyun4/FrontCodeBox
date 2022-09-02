@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Vue Sample</title>
+  </head>
+  <body>
+    <div id="app">
+      {{ message }}
+    </div>
+
+    <!-- 뷰 라이브러리 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.2/dist/vue.js"></script>
+    <script>
+    //   뷰 인스턴스 생성
+      new Vue({
+        el: '#app', 
+        data: { 
+          message: 'Hello Vue.js!'
+        }
+      });
+    </script>
+  </body>
+</html>
+

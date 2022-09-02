@@ -1,0 +1,35 @@
+div {
+  width: 100px;
+  height: 100px;
+}
+
+section * {
+  color: blueviolet;
+  font-size: 40px;
+}
+
+section ul {
+  color: red;
+}
+/* 같은 자손요소라도 특정부분만 선택하는것과 전체 선택하는것 중에는
+전체 선택하는요소가 우선시 된다. */
+
+ul > li {
+  color: blue;
+}
+/* 자식요소 선택자가 자손요소 선택자보다 우선이 된다! */
+
+.one {
+  font-weight: 700;
+}
+
+.one ~ span {
+  color: cornflowerblue;
+}
+/* 클래스 one 이후에 선언된 형재 span태그들을 선택한다. */
+
+.one + span {
+  color: red;
+}
+/* 클래스 one 바로 다음 선언된 형재 span태그들을 선택한다. */
+/* span태그가 one클래스 바로 다음 태그가 아니면 적용되지 않는다. */

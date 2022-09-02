@@ -1,0 +1,80 @@
+::selection {
+    background: var(--secondary);
+}
+
+::-moz-selection {
+    background: var(--secondary);
+}
+
+
+body,
+button {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  background: var(--gray);
+  color: var(--primary);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 1000px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 0.7fr 0.3fr;
+    grid-template-rows: auto 1fr auto;
+  }
+}
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+a {
+  color: var(--primary);
+  outline: none;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover,
+a:active,
+a.active {
+  color: var(--secondary);
+  text-decoration: underline;
+}
+
+
+h1 {
+  margin-bottom: 1em;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid var(--gray);
+  margin-bottom: 20px;
+}
+
+
+.float--right {
+  float: right !important;
+  padding: 0.8rem;
+}
+

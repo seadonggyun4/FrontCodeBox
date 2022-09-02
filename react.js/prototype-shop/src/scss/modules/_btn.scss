@@ -1,0 +1,122 @@
+//   ============================================================ btn ============================================================
+  
+.btn {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #fff;
+    border: 0.05rem solid var(--secondary);
+    border-radius: 6px;
+    color: var(--secondary);
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1rem;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-size: 0.9rem;
+    height: 2rem;
+    padding: 0.45rem 0.6rem;
+}
+
+.btn:focus,
+.btn:hover {
+    background: var(--gray);
+    border-color: var(--primary);
+    text-decoration: none;
+}
+
+.btn[disabled],
+.btn:disabled,
+.btn.disabled {
+    cursor: default;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.btn.btn--primary {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+}
+
+.btn.btn--primary:focus,
+.btn.btn--primary:hover {
+    background: var(--secondary);
+    border-color: var(--secondary);
+    color: var(--primary);
+}
+
+.btn.btn--primary:active,
+.btn.btn--primary.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--secondary);
+}
+
+.btn.btn--secondary {
+    background: var(--secondary);
+    border-color: var(--secondary);
+    color: var(--primary);
+}
+
+.btn.btn--secondary:focus,
+.btn.btn--secondary:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--gray);
+}
+
+.btn.btn--secondary:active,
+.btn.btn--secondary.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--secondary);
+}
+
+.btn.btn--link {
+    background: transparent;
+    border-color: transparent;
+    color: var(--primary);
+}
+
+.btn.btn--link:focus,
+.btn.btn--link:hover,
+.btn.btn--link:active,
+.btn.btn--link.active {
+    color: var(--secondary);
+}
+
+.btn.btn--clear {
+    background: transparent;
+    border: 0;
+    color: currentColor;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin-left: 0.2rem;
+    margin-right: -2px;
+    opacity: 1;
+    padding: 0;
+    text-decoration: none;
+    width: 0.8rem;
+}
+
+.btn.btn--clear:hover {
+    color: #00ffb9;
+    opacity: 0.95;
+}
+
+.btn.btn--clear::before {
+    content: "\2715";
+}
+
+.btn .icon {
+    vertical-align: -10%;
+}
+

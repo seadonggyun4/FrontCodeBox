@@ -1,0 +1,141 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>내집만들기</title>
+    <link rel="stylesheet" href="resources/css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="resources/css/bootstrap.css" />
+    <link rel="stylesheet" href="resources/css/app.css" />
+    <script src="resources/js/jquery-3.5.1.min.js"></script>
+    <script src="resources/js/jquery-ui.js"></script>
+    <script src="resources/js/bootstrap.js"></script>
+  </head>
+  <body>
+    <!-- ==========================================  상단 내비게이션 ========================================== -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-xl">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="resources/images/logo.png"
+            alt="내집꾸미기"
+            title="내집꾸미기"
+          />
+        </a>
+        <!-- 모바일 버전에서 상호작용 가능한 버튼. 마우스를 올리면 메인 메뉴 보임. -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">홈</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">온라인 집들이</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="store.html">스토어</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">전문가</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">시공 견적</a>
+            </li>
+          </ul>
+          <button class="btn btn-sm btn-light mr-2">로그인</button>
+          <button class="btn btn-sm btn-light">회원가입</button>
+        </div>
+      </div>
+    </nav>
+    <!-- ==========================================  메인 페이지 ========================================== -->
+    <div class="container-xl">
+      <!-- =================  검색창 ================= -->
+      <div class="row mt40">
+        <div class="col-12">
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="검색어를 입력해주세요."
+              aria-label="검색어를 입력해주세요."
+              onkeyup="onSearch(this.value)"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- =================  상품리스트 & 장바구니 ================= -->
+      <div class="row mt40">
+        <div class="col-8">
+          <h2 class="display-5 mb-5">모든 상품 리스트</h2>
+          <div class="card-deck" id="product-list"></div>
+          <div id="msg-empty">일치하는 상품이 없습니다.</div>
+        </div>
+        <div class="col-4">
+          <h2 class="display-5 mb-5">장바구니</h2>
+          <div id="basket">
+            <div class="col-12">
+              <div id="drop-area">이곳에 상품을 놓아주세요.</div>
+              <div id="basket-list"></div>
+              <div class="text-right mb-3">
+                총 합계 <span id="total-sum">0</span>원
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-primary btn-lg btn-block"
+              onclick="openBuyPopup()"
+            >
+              구매하기
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ==========================================  하단부 ========================================== -->
+    <footer id="footer" class="bg-dark mt100">
+      <div class="container-xl">
+        Copyright(c) 2020 내집꾸미기. All rights reserved.
+      </div>
+    </footer>
+    <!-- ========================================== 구매 창 ========================================== -->
+    <div id="popup-buy" title="구매자 정보">
+      <form>
+        <!-- fieldset 요소는 관련있는 폼 필드 세트를 표시한다. -->
+        <fieldset>
+          <div class="row mb-2">
+            <div class="col-3"><label for="name">이름</label></div>
+            <div class="col-9">
+              <input type="text" name="name" id="name" class="form-control" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3"><label for="address">주소</label></div>
+            <div class="col-9">
+              <input
+                type="text"
+                name="address"
+                id="address"
+                class="form-control"
+              />
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <!-- ==========================================  영수증 창 ========================================== -->
+    <div id="popup-receipt">
+      <canvas id="receipt"></canvas>
+    </div>
+    <script src="resources/js/store.js"></script>
+  </body>
+</html>

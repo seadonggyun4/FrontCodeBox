@@ -1,0 +1,96 @@
+ //   ============================================================ icon ============================================================
+  
+.icon {
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: inherit;
+    font-style: normal;
+    height: 1em;
+    position: relative;
+    text-indent: -9999px;
+    vertical-align: middle;
+    width: 1em;
+}
+
+.icon::before,
+.icon::after {
+    display: block;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon--forward::before {
+    border: 1px solid currentColor;
+    border-bottom: 0;
+    border-right: 0;
+    content: "";
+    height: 0.62em;
+    width: 0.62em;
+}
+
+.icon--forward::after {
+    background: currentColor;
+    content: "";
+    height: 13px;
+    width: 1px;
+}
+
+.icon--forward::after {
+    left: 46%;
+}
+
+.icon--forward::before {
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.icon--plus::before,
+.icon--cross::before {
+    background: currentColor;
+    content: "";
+    height: 1px;
+    width: 100%;
+}
+
+.icon--plus::after,
+.icon--cross::after {
+    background: currentColor;
+    content: "";
+    height: 100%;
+    width: 1px;
+}
+
+.icon--cross::before {
+    width: 100%;
+}
+
+.icon--cross::after {
+    height: 100%;
+}
+
+.icon--cross::before,
+.icon--cross::after {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.icon--delete::before {
+    border: 1px solid currentColor;
+    border-bottom-left-radius: 0.1rem;
+    border-bottom-right-radius: 0.1rem;
+    border-top: 0;
+    content: "";
+    height: 0.65em;
+    top: 60%;
+    width: 0.75em;
+}
+
+.icon--delete::after {
+    background: currentColor;
+    box-shadow: -0.25em 0.2em, 0.25em 0.2em;
+    content: "";
+    height: 1px;
+    top: 0.05rem;
+    width: 0.55em;
+}
+

@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.main-background {
+  border-radius: 0px;
+  background-image: url(./marek-piwnicki-FDLpSx_cl9g-unsplash.jpg);
+  background-size: cover;
+  color: #fff;
+}
+/* 왼쪽사이드 메뉴 */
+.left-menu {
+  position: fixed;
+  margin-left: -150px;
+  width: 150px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+/* 모달창 */
+.black-background {
+  z-index: 5;
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 1s ease-in-out;
+  transform: translateY(-1000px);
+}
+
+.white-background {
+  background: #fff;
+  margin: 100px auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 10px;
+}
+.white-background p {
+  display: none;
+  color: red;
+}
+
+.slide-down {
+  transform: translateY(0px);
+}
+.slide-up {
+  transform: translateY(-1000px);
+}
+
+/* 상단메뉴 */
+.nav-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: auto;
+  width: 100%;
+  background-color: transparent;
+  transition: all 500ms ease-in-out;
+}
+
+.nav-black {
+  background-color: #000;
+  color: #fff;
+}
+
+.nav-sub {
+  display: none;
+}
+.nav-sub-button {
+  cursor: pointer;
+}
+
+.nav-menu h1 {
+  transition: font-size 500ms ease-in-out;
+}
+
+.font-change {
+  font-size: 1rem;
+}
+
+/* 케러셀 */
+.slide-container {
+  width: 300vw;
+  transition: transform 1s ease-in-out;
+}
+.slide-box {
+  width: 100vw;
+  float: left;
+}
+
+.slide-next {
+  position: absolute;
+  top: 45%;
+  right: 0;
+}
+
+.slide-back {
+  position: absolute;
+  top: 45%;
+  left: 0;
+}
+
+.slide-box img {
+  width: 100%;
+}
+/* 탭 기능 */
+ul.list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+ul.list::after {
+  content: "";
+  display: block;
+  /* clear는 '취소하다'라는 뜻으로 folat를 취소한다는 뜻 */
+  clear: both;
+}
+
+.tab-button {
+  display: block;
+  padding: 10px 20px;
+  margin-right: -1px;
+  margin-bottom: -1px;
+  color: grey;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.active {
+  border-top: 2px solid orange;
+  border-bottom: 1px solid white;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  color: #000;
+}
+
+.tab-content {
+  display: none;
+  padding: 10px;
+}
+.show {
+  display: block;
+}

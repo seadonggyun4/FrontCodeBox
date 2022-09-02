@@ -1,0 +1,25 @@
+/* font.css 연결 */
+@import url(./fonts.css);
+
+body {
+  line-height: 1.65;
+  color: #212529;
+  font-family: "kimgbug";
+}
+
+.box {
+  width: 100%;
+  max-width: 540px;
+  padding: 120px 0;
+  margin: 0 auto;
+}
+
+.box h1 {
+  margin-bottom: 1.25em;
+  color: #1f2d3d;
+  line-height: 1.4;
+}
+
+.box p {
+  color: #3c4858;
+}

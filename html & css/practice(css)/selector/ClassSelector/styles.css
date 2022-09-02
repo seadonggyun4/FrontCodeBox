@@ -1,0 +1,13 @@
+div {
+  width: 100px;
+  height: 100px;
+}
+.box1 {
+  background-color: aqua;
+}
+.box2 {
+  background-color: brown;
+}
+.box1.box2 {
+  background-color: blue;
+}

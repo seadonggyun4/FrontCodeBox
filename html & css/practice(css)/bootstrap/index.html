@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BootStrap GridSystem</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- 가로 한줄, 안의 col이 12를 넘게 되면 아래로 흘러내린다. -->
+      <div class="row">
+        <!-- 세로영역 선언, 뒤의 정수는 몇 칸을 차지할 건지  -->
+        <div class="col-1">
+          <!-- 요소 -->
+          <p>가로 1</p>
+        </div>
+        <div class="col-12">
+          <p>가로 12</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3"><p>가로 3</p></div>
+        <div class="col-3"><p>가로 3</p></div>
+        <div class="col-3"><p>가로 3</p></div>
+        <div class="col-3"><p>가로 3</p></div>
+      </div>
+      <div class="row">
+        <!-- 브레이크 포인트 별로 지정된 class명 을 사용 하면 사이즈 조절 가능 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+          <p>가로 12 & 6 & 4 & 2</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

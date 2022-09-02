@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.item-input {
+  margin-top: 50px;
+  width: 80%;
+}
+
+.shop-system {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.item-list img {
+  height: 300px;
+  width: 300px;
+}
+
+.shop-cart-list {
+  padding: 20px;
+}
+
+.shop-cart {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}

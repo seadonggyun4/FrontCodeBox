@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.alert-box {
+  display: none;
+  padding: 20px;
+  border-radius: 5px;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.blue {
+  background-color: blue;
+}

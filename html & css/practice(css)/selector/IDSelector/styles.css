@@ -1,0 +1,22 @@
+div {
+  width: 100px;
+  height: 100px;
+}
+
+#gildong {
+  background-color: brown;
+}
+
+.box {
+  background-color: burlywood;
+}
+
+/* 클래스box이자 id gildong인 태그를 선택할때  */
+#gildong.box {
+  background-color: cadetblue;
+}
+
+/* 반대도 가능하다.
+.box#gildong{
+  background-color: cadetblue;
+} */
