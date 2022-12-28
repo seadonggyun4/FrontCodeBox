@@ -1,3 +1,9 @@
 유튜브 강의 :  https://www.youtube.com/watch?v=NrL8XgWX-GM&list=PLwtj4R9Hld3GUdKDhl5YcXWRUNkrtIkX0&index=4 
 
+vue 스토리북 적용 : https://velog.io/@harrycod/Vue-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90-Storybook-%EC%A0%81%EC%9A%A9%ED%95%B4%EB%B3%B4%EA%B8%B0
+
 스토리북 + SCSS : https://trend21c.tistory.com/2216
+
+경로 alias 설정 : https://zereight.tistory.com/1051
+
+글로벌 scss 설정 : https://donghoon-song.github.io/development/2020-07-28---Storybook-+-%EC%A0%84%EC%97%AD-scss-%EC%84%A4%EC%A0%95/
