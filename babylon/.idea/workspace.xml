@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d6801cea-1e4f-4c8b-a7b9-3cbf6d9b7f19" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/b101" beforeDir="false" afterPath="$PROJECT_DIR$/b101" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b101/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/b101/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b101/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/b101/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b101/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/b101/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b101/src/assets/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/b101/src/assets/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b101/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vue.js/vuex/learn-vuex" beforeDir="false" afterPath="$PROJECT_DIR$/../vue.js/vuex/learn-vuex" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2LrZouSzOEP5ofW20OstVXWT64z" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/김경범/Desktop/Study file/FrontCodeBox/babylon/b101",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\김경범\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="d6801cea-1e4f-4c8b-a7b9-3cbf6d9b7f19" name="변경" comment="" />
+      <created>1676631339444</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676631339444</updated>
+      <workItem from="1676631341294" duration="16000" />
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
