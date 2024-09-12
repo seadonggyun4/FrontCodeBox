@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+    background-color: #eee;
+}
+
+.app-ui{
+    position: relative;
+    width: 340px;
+    height: 640px;
+    transform: rotate(-30deg) skewX(20deg) scale(0.7);
+    background-color: #ddd;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    transition: 0.5s ease-in-out;
+}
+
+.app-ui:hover{
+    box-shadow: -50px 100px 60px rgba(0,0,0,0.3);
+}
+
+.app-ui div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+    background: cornflowerblue;
+}
+
+.app-ui:hover div:nth-child(1){
+    transform: translate3d(40px, -40px, 0);
+    opacity: 0.2;
+}
+
+.app-ui:hover div:nth-child(2){
+    transform: translate3d(80px, -80px, 0);
+    opacity: 0.4;
+}
+
+.app-ui:hover div:nth-child(3){
+    transform: translate3d(120px, -120px, 0);
+    opacity: 0.6;
+}
+
+.app-ui:hover div:nth-child(4){
+    transform: translate3d(160px, -160px, 0);
+    opacity: 0.8;
+}
