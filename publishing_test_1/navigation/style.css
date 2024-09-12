@@ -1,0 +1,56 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, #DCE35B, #45B649);
+    overflow: hidden;
+}
+
+.gnb{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+.gnb a{
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.gnb a:before, .gnb a:after{
+    content: attr(data-link);
+    position: absolute;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.gnb a:before{
+    top: 0;
+    left: 0;
+}
+
+.gnb a:after{
+    top: 100%;
+    left: 0;
+    color:#45B649;
+    opacity: 0;
+}
+
+.gnb a:hover:before{
+    top: -100%;
+    opacity: 0;
+}
+
+.gnb a:hover:after{
+    top: 0;
+    opacity: 1;
+}
